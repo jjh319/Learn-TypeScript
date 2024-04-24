@@ -1,5 +1,5 @@
 function sum3(a: number, b: number): number {
     return a + b;
-} // sum2
+} // sum3
 
-sum2(10, 20);
+sum3(10, 20);
