@@ -45,16 +45,16 @@ function startApp() {
             user = response.data;
             // TODO: 이름, 이메일, 주소 표시하기
             console.log(user);
-            username.innerHTML = user[0].name;
-            email.innerHTML = user[0].email;
+            username.innerHTML = user.name;
+            email.innerHTML = user.email;
             address.innerHTML =
-                user[0].address.street +
+                user.address.street +
                 ', ' +
-                user[0].address.suite +
+                user.address.suite +
                 ', ' +
-                user[0].address.city +
+                user.address.city +
                 ', ' +
-                user[0].address.zipcode;
+                user.address.zipcode;
         })
         .catch(function (error) {
             console.log(error);
