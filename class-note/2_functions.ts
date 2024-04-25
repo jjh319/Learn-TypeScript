@@ -13,3 +13,11 @@ function add(): number {
 function sum5(a: number, b: number): number {
     return a + b;
 }
+
+sum5(10); // 에러
+
+// 함수의 옵셔널 파라미터
+function log(a: string, b?: string) {}
+
+log('hello world');
+log('hello ts', 'abc');
