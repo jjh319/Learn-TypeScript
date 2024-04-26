@@ -33,9 +33,14 @@ function askSomeOne(someone: Developer2 | Person3) {
     someone.name; // 공통된 name만 사용 가능 - union 타입의 특징
 }
 
+askSomeOne({ name: '디벨로퍼', skill: '웹 개발' });
+askSomeOne({ name: '캡틴', age: 100 });
+
 // 인터섹션 타입
 function askSomeOne2(someone: Developer2 & Person3) {
     someone.name;
     someone.age;
     someone.skill;
 }
+
+askSomeOne2({ name: '지훈', skill: '웹개발', age: 25 });
