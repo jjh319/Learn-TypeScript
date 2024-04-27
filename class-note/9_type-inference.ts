@@ -35,3 +35,11 @@ var detailedItem: DetailedDropdown<number> = {
     value: 'ggg', // T = number로 들어오기 때문에 에러
     tag: 100,
 };
+
+// Best Common Type 추론 방식
+/**
+ * 타입은 보통 몇 개의 표현식(코드)을 바탕으로 타입을 추론,
+ * 그 표현식을 이용하여 가장 근접한 타입을 추론하게 되는데 이 가장
+ * 근접한 타입을 Best Common Type 이라고 합니다.
+ */
+var arr = [1, 1, true, 'a'];
